@@ -1,13 +1,147 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* font poppins import */
+/* 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* global styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+    /* color variables */
+    --colorBg: #1f3825;
+    --colorBgVariant: #2c6c3b;
+    --colorPrimary: #71ff4d;
+    --colorPrimaryVariant: rgba(83, 255, 77, 0.4);
+    --colorWhite : #fff;
+    --colorLight: rgba(255, 255, 255, 0.6);
+
+    /* transition */
+    --transition: all 0.4s ease;
+
+    /* container responsive */
+    --containerWidthLg: 75%;
+    --containerWidthMd: 86%;
+    --containerWidthSm: 90%;
+
+    /* FONT */
+    --pageFont : 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: var(--pageFont);
+    color: var(--colorWhite);
+    line-height: 1.7;
+}
+
+/* -------------------GENERAL STYLES -------------- */
+
+.container{
+    width: var(--containerWidthLg);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+section{
+    margin-top: 8rem;
+    height: 100vh;
+}
+
+/* titulos y subtitulos */
+section > h2, section > h5 {
+    text-align: center;
+    color: var(--colorLight);
+}
+
+section > h2{
+    color: var(--colorPrimary);
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color: var(--colorLight);
+}
+
+a{
+    color: var(--colorPrimary);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--colorWhite);
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--colorPrimary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--colorPrimaryVariant);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--colorWhite);
+    color: var(--colorBg);
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--colorPrimary);
+    color: var(--colorBg);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ------------ MEDIA QUERYS (MEDIA DEVICES // TABLETS)  -------------- */
+@media screen and (max-width: 600px) {
+    .container{
+        width: var(--containerWidthSm);
+    }
+    .section > h2{
+        margin-top: 2rem;
+    }
+}
+
+
+/* ------------ MEDIA QUERYS (MEDIA DEVICES // TABLETS)  -------------- */
+@media screen and (max-width: 1024px) {
+    .container{
+        width: var(--containerWidthMd);
+    }
+    .section{
+        margin-top: 6rem;
+    }
 }
