@@ -23,7 +23,7 @@
     --colorLight: rgba(255, 255, 255, 0.6);
 
     /* transition */
-    --transition: all 0.4s ease;
+    --transition: all 400ms ease;
 
     /* container responsive */
     --containerWidthLg: 75%;
