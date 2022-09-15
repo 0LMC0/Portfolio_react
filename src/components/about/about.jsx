@@ -6,8 +6,11 @@ import { BsAwardFill, BsFolderPlus } from "react-icons/bs"
 import { FaUserCheck } from "react-icons/fa"
 // img
 import LOGO_PRACTIENDA from "../../assets/logo_practienda .png"
+// tilt.js import
+import Tilt from "react-parallax-tilt"
 
 const About = () => {
+
   return (
     <section id="about">
       <h5>Get to know me</h5>
@@ -15,24 +18,31 @@ const About = () => {
 
       <div className="container about_container">
         <div className="about_content">
-          <div className="about_cards">
-            <article className="about_card">
-                < BsAwardFill classname="about_icon"/>
-                <h5>Experience</h5>
-                <small>1x year experience</small>
-            </article>
+          <div className="about_cards">     
 
-            <article className="about_card">
-                < FaUserCheck classname="about_icon"/>
-                <h5>Clients</h5>
-                <small>10+ worldwide</small>
-            </article>            
-            
-            <article className="about_card">
-                < BsFolderPlus classname="about_icon"/>
-                <h5>Real projects</h5>
-                <small>15+</small>
-            </article>
+            <Tilt className="parallax-effect" transitionSpeed={3000} perspective={800}>
+              <article className="about_card inner-element">
+                  < BsAwardFill classname="about_icon"/>
+                  <h5>Experience</h5>
+                  <small>1x year experience</small>
+              </article>
+            </Tilt>
+
+            <Tilt className="parallax-effect" transitionSpeed={3000} perspective={800}>
+              <article className="about_card inner-element">
+                  < FaUserCheck classname="about_icon"/>
+                  <h5>Clients</h5>
+                  <small>10+ worldwide</small>
+              </article>            
+            </Tilt>
+              
+            <Tilt className="parallax-effect" transitionSpeed={3000} perspective={800}>
+              <article className="about_card inner-element">
+                  < BsFolderPlus classname="about_icon"/>
+                  <h5>Real projects</h5>
+                  <small>15+</small>
+              </article>
+            </Tilt>
           </div>
 
           <p>I'm Lautaro, a biligüal 22 person originally from Buenos Aires, Argentina.

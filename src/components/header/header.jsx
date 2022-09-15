@@ -11,11 +11,13 @@ const Header = () => {
   return (
     <header id="header">
       <div className="container header__container">
+        <div>
         <h5>Hello I'm.</h5>
         <h1>Lautaro Caceres</h1>
         <h5 className="text-light">Front-End Developer</h5>
         <CallToAction />
         <HeaderSocials />
+        </div>
 
         <div className="me">
           <img src={ME} alt="" />
