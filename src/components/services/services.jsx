@@ -17,27 +17,27 @@ const Services = () => {
 
             <li>
               <ImCheckmark className="service_listIcon"/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>API (Application Programming Interface)</p>
             </li>
 
             <li>
               <ImCheckmark className="service_listIcon"/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Programming Languages</p>
             </li>
 
             <li>
               <ImCheckmark className="service_listIcon"/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Problem Solving and Searching</p>
             </li>
 
             <li>
               <ImCheckmark className="service_listIcon"/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Deployment</p>
             </li>
 
             <li>
               <ImCheckmark className="service_listIcon"/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Git and Github</p>
             </li>
           </ul>
 
@@ -51,22 +51,27 @@ const Services = () => {
 
             <li>
               <ImCheckmark className="service_listIcon"/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Leadership.</p>
             </li>
 
             <li>
               <ImCheckmark className="service_listIcon"/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Problem-solving.</p>
             </li>
 
             <li>
               <ImCheckmark className="service_listIcon"/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Teamwork.</p>
             </li>
 
             <li>
               <ImCheckmark className="service_listIcon"/>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Decision-making.</p>
+            </li>
+
+            <li>
+              <ImCheckmark className="service_listIcon"/>
+              <p>Critical thinking.</p>
             </li>
           </ul>
 

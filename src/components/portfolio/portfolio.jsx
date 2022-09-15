@@ -17,7 +17,7 @@ const Portfolio = () => {
     {
       id: 1,
       img: PROJECT1,
-      title:"Practienda.com",
+      title:"Practienda.com (My Start-Up)",
       iconStyle: <BsPatchCheckFill />,
       technologies: "HTML5 - CSS3 - Bootstrap - Javascript",
       demo: "https://practienda.com"

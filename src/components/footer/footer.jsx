@@ -9,12 +9,12 @@ const Footer = () => {
       <a href="#" rel="nonferrer" className="footer_logo">LMC</a>
 
       <ul className="permalinks">
-        <li><a href="#"></a></li>
-        <li><a href="#about"></a></li>
-        <li><a href="#experience"></a></li>
-        <li><a href="#services"></a></li>
-        <li><a href="#portfolio"></a></li>
-        <li><a href="#contact"></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <div className="footer_socials">
@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
 
       <div className="footer_copyright">
-        <small>&copyright Lautaro Caceres. All Rights Reserved.</small>
+        <small>© Lautaro Caceres. All Rights Reserved.</small>
       </div>
     </footer>
   )

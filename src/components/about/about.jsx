@@ -35,7 +35,8 @@ const About = () => {
             </article>
           </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus, hic quibusdam dolorum beatae sint deleniti dignissimos. Officia impedit ipsum sunt nulla ut magni asperiores aut? Incidunt autem magni maiores.</p>
+          <p>I'm Lautaro, a biligüal 22 person originally from Buenos Aires, Argentina.
+          Graduated from a complete integrated course from Coderhouse [HTML5, CSS3, Javascript & React.Js], Dedicated worker with the goal of helping achieve goals and take on more responsibilities as quickly as possible. Seeking to take advantage of the knowledge acquired (academic and self-taught) to effectively fill your company vacant position.</p>
 
           <a href="#contact" className="btn btn-primary">Let's talk!</a>
         </div>

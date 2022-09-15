@@ -21,7 +21,7 @@ const ParticlesJsBackground = () => {
             autoPlay: true,
             background: {
                 color: {
-                    value: "#1f3825",
+                    value: "#000",
                 },
             },
             fpsLimit: 120,
