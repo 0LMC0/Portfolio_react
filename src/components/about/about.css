@@ -61,6 +61,7 @@
 }
 
 .about_card{
+    width: 100%;
     background: var(--colorBgVariant);
     border: 1px solid transparent;
     border-radius: 1rem;
