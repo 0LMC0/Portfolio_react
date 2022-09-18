@@ -12,12 +12,16 @@ header {
     position: relative;
 }
 
+.header__container h5{
+    font-size: 1.3rem;
+}
+
 /* CTA styling */
 
 .cta{
     display: flex;
     gap: 1.2rem;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 2.5rem;
 }
 
@@ -47,11 +51,8 @@ header {
 /* img */
 
 .me{
-    background: rgb(113,255,77);
-    background: -moz-linear-gradient(196deg, rgba(113,255,77,1) 20%, rgba(49,112,34,0.5606617647058824) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
-    background: -webkit-linear-gradient(196deg, rgba(113,255,77,1) 20%, rgba(49,112,34,0.5606617647058824) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
-    background: linear-gradient(196deg, rgba(113,255,77,1) 20%, rgba(49,112,34,0.5606617647058824) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#71ff4d",endColorstr="#000000",GradientType=1);
+    background: rgba(255, 255, 255, 0.214);
+    background: linear-gradient(196deg, rgb(229, 236, 227) 20%, rgba(49,112,34,0.5606617647058824) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
     width: 25rem;
     height: 30rem;
     padding-top: 1rem;
