@@ -19,7 +19,7 @@ const Footer = () => {
 
       <div className="footer_socials">
         <a href="https://www.facebook.com/whoslauty/" rel="noreferrer" target="_blank" ><BsFacebook/> </a>
-        <a href="#instagram"><BsInstagram/> </a>
+        <a href="https://www.instagram.com/whoslauty/"><BsInstagram/> </a>
       </div>
 
       <div className="footer_copyright">
