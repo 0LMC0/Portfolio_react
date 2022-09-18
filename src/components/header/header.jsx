@@ -6,6 +6,8 @@ import CallToAction from "./CallToAction"
 import HeaderSocials from "./HeaderSocials"
 // me IMG
 import ME from "../../assets/me.png"
+// typewritter
+import Typewriter from "typewriter-effect"
 
 const Header = () => {
   return (
@@ -13,9 +15,26 @@ const Header = () => {
       <div className="container header__container">
         <div>
         <h5>Hello I'm.</h5>
-        <h1>Lautaro Caceres</h1>
-        <h5 className="text-light">Front-End Developer</h5>
+        <h1>
+          <Typewriter 
+            onInit={(typewriter) => {
+              typewriter
+              .typeString("Lautaro Caceres")
+              .start()
+            }}
+          />      
+        </h1>
+        <h5>
+        <Typewriter
+            options={{
+              strings: ['Front-end developer </>', 'Entrepreneur 💸', "Coffee Addict ☕", "Self thaught 🧠", "Cook 🔪" ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+          </h5>
         <CallToAction />
+        <p className="easterEggs">Find the animated easter eggs! <br /> (Click on me!)</p>
         <HeaderSocials />
         </div>
 

@@ -14,6 +14,9 @@
     border-radius: 2rem;
     /* border: 1px solid; */
     transition: var(--transition);
+    -webkit-box-shadow: 10px 10px 6px 0px rgba(201,199,201,1);
+    -moz-box-shadow: 10px 10px 6px 0px rgba(201,199,201,1);
+    box-shadow: 10px 10px 6px 0px rgba(201,199,201,1);
 }
 
 .portfolio_item:hover{
@@ -37,7 +40,12 @@
 .portfolio_item-cta{
     display: flex;
     gap: 1;
+    justify-content: space-evenly;
     margin-bottom: 1rem;
+}
+
+.portfolio_item-cta .btn{
+    font-size: 1.2rem;
 }
 
 /* ------------ MEDIA QUERYS (MEDIA DEVICES // MOBILES)  -------------- */

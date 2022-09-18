@@ -52,17 +52,19 @@ header {
 
 .me{
     background: rgba(255, 255, 255, 0.214);
-    background: linear-gradient(196deg, rgb(229, 236, 227) 20%, rgba(49,112,34,0.5606617647058824) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
+    background: linear-gradient(196deg, rgba(55, 255, 0, 0.652) 20%, rgba(61, 152, 38, 0.561) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
     width: 25rem;
     height: 30rem;
-    padding-top: 1rem;
-    border-radius: 550px;
+    padding-top: 1.5rem;
+    border-radius: 200px;
     align-content: center;
     display: flex;
+    -webkit-box-shadow: 10px 10px 6px 0px rgba(201,199,201,1);
+    -moz-box-shadow: 10px 10px 6px 0px rgba(201,199,201,1);
+    box-shadow: 10px 10px 6px 0px rgba(201,199,201,1);  
 }
 
 .me img{
-    /* border: 1px solid #fff; */
     border-radius: 550px;
 }
 
@@ -80,18 +82,35 @@ header {
     font-size: 1rem;
 }
 
+.easterEggs{
+    font-size: 1.5rem;
+    transform: rotate(15deg);
+text-align: center;
+    margin-top:30vh ;
+    transition: var(--transition);
+}
+
+.easterEggs:hover{
+    color: var(--colorPrimary);
+}
+
+.easterEggs:active{
+    transform: scale(0.8);
+
+}
 /* ------------ MEDIA QUERYS (MEDIA DEVICES // MOBILE)  -------------- */
 @media screen and (max-width: 600px) {
     header{
         height: 100vh;
     }
     .me{
-        position: absolute;
-        bottom: 0; 
-        width: 100%;
+        display: none;
     }
     .headerSocials,
     .scroll_down{
+        display: none;
+    }
+    .easterEggs{
         display: none;
     }
 }
