@@ -47,10 +47,10 @@ header {
 /* img */
 
 .me{
-    background: rgb(113,255,77);
+    background: rgba(113, 255, 77, 0.257);
     background: -moz-linear-gradient(196deg, rgba(113,255,77,1) 20%, rgba(49,112,34,0.5606617647058824) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
     background: -webkit-linear-gradient(196deg, rgba(113,255,77,1) 20%, rgba(49,112,34,0.5606617647058824) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
-    background: linear-gradient(196deg, rgba(113,255,77,1) 20%, rgba(49,112,34,0.5606617647058824) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
+    background: linear-gradient(196deg, rgba(113, 255, 77, 0.598) 20%, rgba(50, 112, 34, 0.409) 43%, rgba(28,64,19,0.29735644257703087) 56%, rgba(9,21,6,0) 75%, rgba(0,0,0,0) 94%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#71ff4d",endColorstr="#000000",GradientType=1);
     width: 25rem;
     height: 30rem;
@@ -84,13 +84,30 @@ header {
     header{
         height: 100vh;
     }
+    .header__container{
+        flex-direction: column;
+    }
     .me{
-        position: absolute;
-        bottom: 0; 
-        width: 100%;
+        background: transparent;
+        width: 100vw;
+        height: 30rem;
+        padding-top: 0.5rem;
+    }
+    .me img{
+        border-radius: 0;
     }
     .headerSocials,
     .scroll_down{
         display: none;
+    }
+}
+
+/* ------------ MEDIA QUERYS (MEDIA DEVICES // TABLETS)  -------------- */
+@media screen and (max-width: 1024px) {
+    .header__container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
     }
 }
